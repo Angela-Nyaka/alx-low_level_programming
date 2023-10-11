@@ -1,6 +1,6 @@
-#include "main.h"                                                                                                                       
+#include "main.h"
 /**
-* abs- prints the alphabet, in lowercase, followed by a new line
+* _abs- prints the alphabet, in lowercase, followed by a new line
 *@n: int to check
 * Return: absolute value
 */
