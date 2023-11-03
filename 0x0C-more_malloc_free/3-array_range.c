@@ -4,7 +4,7 @@
 *@min: minimum value
 *@max: maximum value
 *
-*Return:
+*Return: pointer to new array
 */
 int *array_range(int min, int max)
 {
@@ -15,18 +15,17 @@ if (min > max)
 {
 return (NULL);
 }
-size = sizeof(arr)/sizeof(arr[0]);
+size = max - min + 1;
 
-arr = malloc(size * sizeof(int));
+arr = malloc(sizeof(int) * size);
 
 if (arr == NULL)
 {
 return (NULL);
 }
-for (i = 0; i; min <= max; i++)
+for (i = 0;  min <= max; i++)
 {
-arr[i] = min;
-m++;
+arr[i] = min++;
 }
 return (arr);
 }
